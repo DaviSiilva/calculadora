@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f4f4;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.calculadora {
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.display {
+  width: 100%;
+  font-size: 2rem;
+  text-align: right;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background: #e0e0e0;
+  color: #333;
+  border-radius: 10px 10px 0 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 0;
+}
+
+button {
+  width: 100%;
+  padding: 20px;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #fafafa;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: #dfe6e9;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+  background-color: #b2bec3;
+}
+
+.btn-clear {
+  background-color: #ff7675;
+  color: white;
+}
+
+.btn-del {
+  background-color: #fdcb6e;
+  color: white;
+}
+
+.btn-eq {
+  background-color: #00b894;
+  color: white;
+  border-radius: 0 0 10px 10px;
+}
+
+.btn-num {
+  background-color: #dfe6e9;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .display {
+    font-size: 1.3rem;
+    padding: 10px;
+  }
+
+  button {
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Ajustes para telas muito pequenas (até 400px) */
+@media (max-width: 400px) {
+  .display {
+    font-size: 1.2rem;
+    padding: 8px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
+/* Ajustes para telas maiores (acima de 1200px) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 500px;
+  }
+
+  .display {
+    font-size: 2.5rem;
+    padding: 20px;
+  }
+
+  button {
+    padding: 25px;
+    font-size: 1.8rem;
+  }
+}
